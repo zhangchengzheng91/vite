@@ -290,6 +290,7 @@ export interface ResolvedServerUrls {
   network: string[]
 }
 
+// todo ｜ 02-vite 启动过程分析 ｜ 06 - createServer
 export async function createServer(
   inlineConfig: InlineConfig = {}
 ): Promise<ViteDevServer> {

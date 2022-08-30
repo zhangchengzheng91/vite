@@ -41,9 +41,11 @@ if (debugIndex > 0) {
 }
 
 function start() {
+  // todo ｜ 02-vite 启动过程分析 ｜ 04 - 执行启动函数
   return import('../dist/node/cli.js')
 }
-
+// todo ｜ 02-vite 启动过程分析 ｜ 03 - 执行启动函数
+console.log('profileIndex=', profileIndex)
 if (profileIndex > 0) {
   process.argv.splice(profileIndex, 1)
   const next = process.argv[profileIndex]
