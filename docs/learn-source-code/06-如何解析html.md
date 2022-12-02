@@ -27,7 +27,6 @@ dev 环境 html 转化。初始值未 null。
 源 html 文件解析完之后，会在 head 中插入 client
 
 ```html
-
 <head>
   <script type="module" src="/@vite/client"></script>
 </head>
@@ -36,7 +35,7 @@ dev 环境 html 转化。初始值未 null。
 在 client 中插入了 env.mjs 文件
 
 ```js
-import '/@fs/Users/bytedance/source-code/vite/packages/vite/dist/client/env.mjs';
+import '/@fs/Users/bytedance/source-code/vite/packages/vite/dist/client/env.mjs'
 ```
 
 ### postHook
@@ -48,6 +47,3 @@ import '/@fs/Users/bytedance/source-code/vite/packages/vite/dist/client/env.mjs'
 ## applyHtmlTransforms
 
 /vite/packages/vite/src/node/plugins/html.ts
-
-
-

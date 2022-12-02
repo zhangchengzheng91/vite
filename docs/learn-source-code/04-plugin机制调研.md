@@ -2,12 +2,12 @@
 
 ## 一些常用变量释义
 
-| 变量名称     | 释义           | 示例  |
-|:---------|:-------------|:----|
-| id       | 文件绝对路径       |/Users/bytedance/workspace/business_platform/packages/platform_tools/src/pages/phrase/phrase.ts|
-| file     | 文件名称【包含绝对路径】 |/Users/bytedance/workspace/business_platform/packages/platform_tools/src/pages/phrase/phrase.ts|
-| importer | 同 id         ||
-||||
+| 变量名称 | 释义                     | 示例                                                                                            |
+| :------- | :----------------------- | :---------------------------------------------------------------------------------------------- |
+| id       | 文件绝对路径             | /Users/bytedance/workspace/business_platform/packages/platform_tools/src/pages/phrase/phrase.ts |
+| file     | 文件名称【包含绝对路径】 | /Users/bytedance/workspace/business_platform/packages/platform_tools/src/pages/phrase/phrase.ts |
+| importer | 同 id                    |                                                                                                 |
+|          |                          |                                                                                                 |
 
 ## build 生命周期
 
@@ -116,7 +116,6 @@ flowchart TB
 
 [https://rollupjs.org/guide/en/#a-simple-example](https://rollupjs.org/guide/en/#a-simple-example)
 [https://vitejs.bootcss.com/guide/api-plugin.html#virtual-modules-convention](https://vitejs.bootcss.com/guide/api-plugin.html#virtual-modules-convention)
-
 
 参考文档:
 

@@ -1,6 +1,5 @@
 # import analysis 插件功能分析
 
-
 ```mermaid
 flowchart TB
 
@@ -87,6 +86,7 @@ flowchart TB
     --> |unresolved|resolveid
 
 ```
+
 ## 解决 BOM 问题
 
-参考文档：[记一次由BOM引起的bug](https://cnodejs.org/topic/5a138c5d9cae544d6e3838a6)
+参考文档：[记一次由 BOM 引起的 bug](https://cnodejs.org/topic/5a138c5d9cae544d6e3838a6)

@@ -22,7 +22,7 @@
 
    参考文件：/packages/vite/src/node/server/moduleGraph.ts -> ModuleGraph
 
-3.
+2.
 
 [01 vite 本地调试方式](./01-本地调试方式.md)
 [02 vite 启动过程分析](./02-vite启动过程分析.md)
