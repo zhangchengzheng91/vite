@@ -267,6 +267,7 @@ export const isJSRequest = (url: string): boolean => {
   if (knownJsSrcRE.test(url)) {
     return true
   }
+  // 无 ext 的文件，默认为 js 文件
   if (!path.extname(url) && !url.endsWith('/')) {
     return true
   }
@@ -908,11 +909,15 @@ export const requireResolveFromRootWithFallback = (
   id: string
 ): string => {
   // Search in the root directory first, and fallback to the default require paths.
+  // todo: 定制化代码，解决 node-sass 编译 sass /deep/ 语法不通过问题
+  if (['sass', 'scss'].includes(id)) {
+    return path.join(root, 'node_modules/node-sass/lib/index.js')
+  }
   const fallbackPaths = _require.resolve.paths?.(id) || []
-  const path = _require.resolve(id, {
+  const path2 = _require.resolve(id, {
     paths: [root, ...fallbackPaths]
   })
-  return path
+  return path2
 }
 
 // Based on node-graceful-fs
@@ -1107,6 +1112,7 @@ function normalizeSingleAlias({
 /**
  * Transforms transpiled code result where line numbers aren't altered,
  * so we can skip sourcemap generation during dev
+ * 转换不改变行号的编译代码结果
  */
 export function transformStableResult(
   s: MagicString,

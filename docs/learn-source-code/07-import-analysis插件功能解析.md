@@ -1,3 +1,17 @@
+# import analysis 插件功能分析
+
+
+```mermaid
+flowchart TB
+
+  params
+  --> |server|stripBOM
+  --> |false|null
+
+
+```
+
+```mermaid
 flowchart TB
     classDef hook-parallel fill:#ffb3b3,stroke:#000;
     classDef hook-sequential fill:#ffd2b3,stroke:#000;
@@ -71,3 +85,8 @@ flowchart TB
 
     resolvedynamicimport
     --> |unresolved|resolveid
+
+```
+## 解决 BOM 问题
+
+参考文档：[记一次由BOM引起的bug](https://cnodejs.org/topic/5a138c5d9cae544d6e3838a6)
